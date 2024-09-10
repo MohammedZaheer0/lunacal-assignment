@@ -9,7 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #272C31;
+;
     --foreground: #ededed;
   }
 }
@@ -17,11 +18,124 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Heading Buttons */
+.buttonstyle{
+  padding: 10px 24px;
+  gap: 10;
+  border-radius: 16px;
+}
+.buttonsboxshadow{
+  box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.25), 10px 10px 15px 10px rgba(0, 0, 0, 0.25);
+}
+.buttonstyle:hover{
+  color: white;
+}
+.shadow{
+  box-shadow: 0px 4.96px 12.4px 2.48px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Curson Style */
+.contentdiv {
+  overflow-y: scroll;
+}
+
+.contentdiv::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+.contentdiv::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.contentdiv::-webkit-scrollbar-thumb {
+  background: linear-gradient(177.32deg, #888989 5.6%, #4A4E54 93.28%); 
+  border-radius: 10px;
+  
+}
+
+.contentdiv::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Horizontal Line */
+.hrline{
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.1) 0%, rgba(248, 248, 248, 0.1) 100%),
+linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+
+
+/* Gallery Button */
+.gallerybutton{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25),inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+}
+.gallerybutton:hover{
+  box-shadow: 10px 10px 10px rgba(21, 21, 21, 0.25),inset 10px 10px 10px rgba(35, 34, 34, 0.25);
+  color: black;
+  background-color: white;
+  border-radius: 16px;
+}
+
+
+
+
+/* Swiper.js  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 25px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide:hover{
+  transform: scale(1.1);
+  transform: rotate(180deg);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(100%);
+  transition: all 0.4s ease;
+}
+.swiper-slide img:hover{
+  filter: brightness(80%);
+}
+
+
+/* AddImage Button */
+.addimagebutton{
+  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.25), -5px -5px 5px rgba(177, 174, 174, 0.25);
+}
+
+
+/* Left & Right Arrows */
+.arrows{
+  border-radius: 50%;
+  font-size: 2.5rem;
+  padding: 10px;
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
+  box-shadow: 5px 5px 10px 10px rgba(14, 13, 13, 0.25), -1px -1px 5px rgba(177, 174, 174, 0.25);
 }
