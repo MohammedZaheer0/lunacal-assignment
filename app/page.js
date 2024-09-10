@@ -46,7 +46,7 @@ export default function Home() {
       <div className='w-[100%] h-[100vh] mx-auto grid gap-10 px-5 py-12 lg:grid-cols-[1fr_1.5fr] grid-cols-1 xl:grid-cols-2 justify-between items-start rounded-3xl'>
 
         {/* Left div */}
-        <div className='bg-[#616161D1] h-[100%] w-[100%] rounded-3xl'></div>
+        <div className='bg-[#616161D1] h-[100%] w-[100%] rounded-3xl flex justify-center items-center text-3xl font-medium'>Thanks For Giving Me This Opportunity</div>
 
         {/* Right divs */}
         <div className='gap-5 flex flex-col justify-between items-center'>
